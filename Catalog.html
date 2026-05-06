@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HaHamama - Catalog</title>
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="homeStyle.css" />
+    <link rel="stylesheet" href="catalogStyle.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container-fluid">
+
+    <!-- Site name -->
+    <a class="navbar-brand" href="home.html">
+    <img src="images/logo.png" alt="HaHamama Logo" class="site-logo">
+</a>
+
+    <!-- Mobile menu button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation actions -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <div class="navbar-nav ms-auto align-items-lg-center gap-3">
+
+        <a href="catalog.html" class="btn btn-success start-shopping-btn">
+          Start Shopping
+        </a>
+
+        <a href="cart.html" class="nav-link nav-icon-link" title="Cart">
+          🛒 Cart <span id="cart-count">(0)</span>
+        </a>
+
+        <a href="login.html" class="nav-link nav-icon-link" title="Login">
+          👤 Sign In
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</nav>
+  <!-- Main catalog content -->
+<main id="catalog-main-container">
+
+  <!-- Catalog header -->
+    <section id="catalog-header">
+    <h1>Browse Our Catalog</h1>
+    <p>Discover fresh produce directly from local farmers.</p>
+    </section>
+
+  <!-- Search section -->
+    <section id="search-section">
+        <input type="text" id="search-input" placeholder="Search for products...">
+    </section>
+
+  <!-- Category filter --><section id="filter-section">
+
+  <a href="#products-section" class="filter-btn">All</a>
+
+  <a href="#vegetables" class="filter-btn">Vegetables</a>
+
+  <a href="#fruits" class="filter-btn">Fruits</a>
+
+  <a href="#herbs" class="filter-btn">Herbs</a>
+
+  <a href="#seasonal-specials" class="filter-btn">Seasonal Specials</a>
+
+</section>
+  <!-- Products section -->
+  <section id="products-section">
+
+    <!-- Vegetables -->
+    <section id="vegetables">
+        <h2>Vegetables</h2>
+
+        <div class="products-grid">
+
+        <div class="product-card">
+            <img src="images/tomato.jpg" alt="tomatoes">
+            <h4>Tomato</h4>
+            <p>Category: Vegetables</p>
+            <p>₪12.90 / kg</p>
+        
+
+            <div class="quantity-control">
+                <button type="button">-</button>
+                <span>0.5 kg</span>
+                <button type="button">+</button>
+            </div>
+
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/Cucumber.jpg" alt="cucumber">
+            <h4>Cucumber</h4>
+            <p>Category: Vegetables</p>
+            <p>₪8.50 / kg</p>
+          
+          <div class="quantity-control">
+                <button type="button">-</button>
+                <span>0.5 kg</span>
+                <button type="button">+</button>
+          </div>
+
+          <button>Add to Cart</button>
+        </div>
+
+         <div class="product-card">
+            <img src="images/yellow pepper.jpeg" alt="yellow pepper">
+            <h4>Yellow pepper</h4>
+            <p>Category: Vegetables</p>
+            <p>₪10.50 / kg</p>
+          
+          <div class="quantity-control">
+                <button type="button">-</button>
+                <span>0.5 kg</span>
+                <button type="button">+</button>
+          </div>
+
+          <button>Add to Cart</button>
+        </div>
+
+         <div class="product-card">
+            <img src="images/green pepper.jpg" alt="green pepper">
+            <h4>Green pepper</h4>
+            <p>Category: Vegetables</p>
+            <p>₪10.50 / kg</p>
+          
+          <div class="quantity-control">
+                <button type="button">-</button>
+                <span>0.5 kg</span>
+                <button type="button">+</button>
+          </div>
+
+          <button>Add to Cart</button>
+        </div>
+
+          <div class="product-card">
+            <img src="images/red pepper.jpg" alt="red pepper">
+            <h4>Red pepper</h4>
+            <p>Category: Vegetables</p>
+            <p>₪10.50 / kg</p>
+          
+          <div class="quantity-control">
+                <button type="button">-</button>
+                <span>0.5 kg</span>
+                <button type="button">+</button>
+          </div>
+
+          <button>Add to Cart</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Fruits -->
+    <section id="fruits">
+      <h2>Fruits</h2>
+
+      <div class="products-grid">
+
+        <div class="product-card">
+            <img src="images/pink lady apple.jpg" alt="pink lady apple">
+            <h4>Pink Lady apple</h4>
+            <p>Category: Fruits</p>
+            <p>₪14.90 / kg</p>
+
+          <div class="quantity-control">
+                <button type="button">-</button>
+                <span>0.5 kg</span>
+                <button type="button">+</button>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/orange.jpg" alt="orange">
+            <h4>Orange</h4>
+            <p>Category: Fruits</p>
+            <p>₪11.50 / kg</p>
+
+            <div class="quantity-control">
+                <button type="button">-</button>
+                <span>0.5 kg</span>
+                <button type="button">+</button>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/banana.jpg" alt="banana">
+            <h4>Banana</h4>
+            <p>Category: Fruits</p>
+            <p>₪7.90 / kg</p>
+
+            <div class="quantity-control">
+                <button type="button">-</button>
+                <span>0.5 kg</span>
+                <button type="button">+</button>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+
+      
+        <div class="product-card">
+            <img src="images/pear.jpg" alt="pear">
+            <h4>Pear</h4>
+            <p>Category: Fruits</p>
+            <p>₪10.90 / kg</p>
+
+            <div class="quantity-control">
+                <button type="button">-</button>
+                <span>0.5 kg</span>
+                <button type="button">+</button>
+            </div>
+          <button>Add to Cart</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Herbs -->
+    <section id="herbs">
+      <h2>Herbs</h2>
+
+      <div class="products-grid">
+
+        <div class="product-card">
+            <img src="images/Parsley.webp" alt="Parsley">
+            <h4>Parsley</h4>
+            <p>Category: Herbs</p>
+            <p>₪6.90 / bunch</p>
+          
+          <div class="quantity-control">
+                <button type="button">-</button>
+                <span>1 bunch</span>
+                <button type="button">+</button>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+
+         <div class="product-card">
+            <img src="images/coriander.jpg" alt="coriander">
+            <h4>Coriander</h4>
+            <p>Category: Herbs</p>
+            <p>₪6.90 / bunch</p>
+          
+          <div class="quantity-control">
+                <button type="button">-</button>
+                <span>1 bunch</span>
+                <button type="button">+</button>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+
+         <div class="product-card">
+            <img src="images/basil.jpg" alt="basil">
+            <h4>Basil</h4>
+            <p>Category: Herbs</p>
+            <p>₪10.90 / bunch</p>
+          
+          <div class="quantity-control">
+                <button type="button">-</button>
+                <span>1 bunch</span>
+                <button type="button">+</button>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/mint.jpg" alt="mint">
+            <h4>Mint</h4>
+            <p>Category: Herbs</p>
+            <p>₪7.50 / bunch</p>
+
+          <div class="quantity-control">
+                <button type="button">-</button>
+                <span>1 bunch</span>
+                <button type="button">+</button>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seasonal Specials -->
+    <section id="seasonal-specials">
+      <h2>Seasonal Specials</h2>
+
+      <div class="products-grid">
+
+        <div class="product-card">
+            <img src="images/strawberry.jpg" alt="strawberry">
+            <h4>Strawberry</h4>
+            <p>Category: Seasonal Specials</p>
+            <p>₪18.90 / box</p>
+
+          <div class="quantity-control">
+                <button type="button">-</button>
+                <span>1 box</span>
+                <button type="button">+</button>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/fresh figs.jpg" alt="fresh figs">
+            <h4>Fresh Figs</h4>
+            <p>Category: Seasonal Specials</p>
+            <p>₪22.00 / box</p>
+          
+          <div class="quantity-control">
+                <button type="button">-</button>
+                <span>1 box</span>
+                <button type="button">+</button>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/grapes.jpg" alt="grapes">
+            <h4>Grapes</h4>
+            <p>Category: Seasonal Specials</p>
+            <p>₪27.00 / box</p>
+          
+          <div class="quantity-control">
+                <button type="button">-</button>
+                <span>1 box</span>
+                <button type="button">+</button>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/cherry.jpg" alt="cherry">
+            <h4>Cherry</h4>
+            <p>Category: Seasonal Specials</p>
+            <p>₪31.90 / box</p>
+          
+          <div class="quantity-control">
+                <button type="button">-</button>
+                <span>1 box</span>
+                <button type="button">+</button>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+
+      </div>
+    </section>
+
+  </section>
+
+</main>
+ <!-- Footer -->
+    <footer class="text-center">
+        <div id="footer-div" class="text-center p-3 text-white">
+            <p>© 2026 HaHamama. All rights reserved.</p> 
+            <p>Contact us: hahamama.service@gmail.com</p>
+        </div>
+     </footer>
+<script src="catalog.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

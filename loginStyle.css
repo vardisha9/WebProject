@@ -1,0 +1,85 @@
+body {
+  font-family: Assistant, sans-serif;
+  background-color: #f7f8f4;
+  margin: 0;
+  color: #2c3e50;
+}
+
+h1 {
+  text-align: center;
+  margin: 35px 0;
+  color: #2e5e1f;
+}
+
+.login-container {
+  max-width: 500px;
+  margin: 0 auto 50px;
+  padding: 0 25px;
+}
+
+.form-box {
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.form-box h2 {
+  color: #2e7d32;
+  margin-top: 0;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #cfd8c8;
+  border-radius: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background-color: #2e7d32;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background-color: #1f5c24;
+}
+
+@media (max-width: 700px) {
+  .login-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.register-link-text {
+  text-align: center;
+  margin: 18px 0 0;
+  color: #2c3e50;
+}
+
+#show-register-btn {
+  background: none;
+  border: none;
+  color: #2e7d32;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+}
+
+#show-register-btn:hover {
+  text-decoration: underline;
+}
